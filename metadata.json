@@ -1,0 +1,8 @@
+{
+  "name": "Remix: FSCommerce",
+  "description": "High-tech production-grade E-commerce Website Builder Platform with real-time visual styling, custom code insertion, and dynamic subdomain routing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

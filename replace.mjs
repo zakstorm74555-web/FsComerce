@@ -1,0 +1,75 @@
+import fs from 'fs';
+
+const filePath = 'src/components/SaaSMainPlatform.tsx';
+let content = fs.readFileSync(filePath, 'utf-8');
+
+// Color and utility class replacements
+content = content.replace(/bg-slate-950/g, 'bg-white');
+content = content.replace(/bg-slate-900\/60/g, 'bg-white');
+content = content.replace(/bg-slate-900/g, 'bg-gray-50');
+content = content.replace(/bg-slate-800/g, 'bg-gray-200');
+content = content.replace(/border-slate-800/g, 'border-gray-200');
+content = content.replace(/border-slate-850/g, 'border-gray-200');
+content = content.replace(/border-slate-900/g, 'border-gray-200');
+content = content.replace(/text-slate-200/g, 'text-gray-700');
+content = content.replace(/text-white/g, 'text-gray-900');
+content = content.replace(/text-gray-200/g, 'text-gray-700');
+content = content.replace(/text-gray-300/g, 'text-gray-600');
+content = content.replace(/text-gray-400/g, 'text-gray-500');
+content = content.replace(/text-cyan-400/g, 'text-green-600');
+content = content.replace(/text-cyan-500/g, 'text-green-600');
+content = content.replace(/bg-cyan-500/g, 'bg-green-600');
+content = content.replace(/bg-cyan-600/g, 'bg-green-600');
+content = content.replace(/bg-cyan-950\/20/g, 'bg-green-50');
+content = content.replace(/bg-cyan-950\/30/g, 'bg-green-50');
+content = content.replace(/bg-cyan-950/g, 'bg-green-50');
+content = content.replace(/border-cyan-500/g, 'border-green-600');
+content = content.replace(/border-cyan-800\/30/g, 'border-green-200');
+content = content.replace(/border-cyan-800\/40/g, 'border-green-200');
+content = content.replace(/text-cyan-300/g, 'text-gray-900');
+content = content.replace(/text-emerald-400/g, 'text-gray-700');
+content = content.replace(/font-mono/g, 'font-sans');
+content = content.replace(/bg-black/g, 'bg-white');
+content = content.replace(/shadow-\[0_0_15px_rgba\(6,182,212,0.4\)\]/g, 'shadow-sm');
+
+// Language/Text replacements
+content = content.replace(/ROOT AUTH/g, 'ADMIN LOGIN');
+content = content.replace(/DEC_RSA_SECURE_LOGIN/g, 'ADMIN LOGIN');
+content = content.replace(/PROVISION_SaaS_NODE/g, 'CREATE STORE');
+content = content.replace(/FSCommerce P2P Network Access Portal v2.4/g, 'NextGen Commerce Admin Portal');
+content = content.replace(/Corporate Mailbox Destination/g, 'Admin Email Address');
+content = content.replace(/Active virtual storefront id segment/g, 'Store Name');
+content = content.replace(/Virtual Subdomain key registration/g, 'Store URL Slug');
+content = content.replace(/Encrypted Root Access Key \/ Password/g, 'Password');
+content = content.replace(/ESTABLISH CONNECT STREAM/g, 'LOG IN');
+content = content.replace(/SOLDER AND EMIT BLOCK NODE/g, 'CREATE STORE');
+content = content.replace(/No active corporate gateway\?/g, 'New to NextGen?');
+content = content.replace(/Spin Up Simulated Store Node \[\+\]/g, 'Create a Store');
+content = content.replace(/Pre-existing hardware client\?/g, 'Already have a store?');
+content = content.replace(/Access Config Matrix \[-\]/g, 'Log In');
+content = content.replace(/ACTIVE WORKSPACE DATABASE/g, 'YOUR STORES');
+content = content.replace(/Advanced Products/g, 'Products');
+content = content.replace(/Dashboard Logs/g, 'Orders');
+content = content.replace(/Advanced CSS\/JS/g, 'Code Editor');
+content = content.replace(/Theme Files/g, 'Themes');
+content = content.replace(/Deploy Docs/g, 'Deployment');
+content = content.replace(/Modify Product Core Component/g, 'Edit Product');
+content = content.replace(/Construct Advanced Device SKU/g, 'Add a Product');
+content = content.replace(/Device Title/g, 'Product Title');
+content = content.replace(/Client Cost \(\$\)/g, 'Price');
+content = content.replace(/Deep Description String/g, 'Description');
+content = content.replace(/Network Node Image Source\/URL/g, 'Product Image (URL)');
+content = content.replace(/Or Upload Local Image Blob/g, 'Upload Image');
+content = content.replace(/Current Active Stock Count/g, 'Inventory Stock');
+content = content.replace(/Compile New Product Entry/g, 'Save Product');
+content = content.replace(/UPDATE SKU/g, 'Save Product');
+content = content.replace(/ADD COMPONENT/g, 'Save Product');
+content = content.replace(/Component Variants & Modifiers/g, 'Product Options');
+content = content.replace(/Variant Name \(e.g., Color\)/g, 'Option Name');
+content = content.replace(/Values \(comma separated\)/g, 'Option Values');
+content = content.replace(/Inject Modifier/g, 'Add Option');
+content = content.replace(/Extract Component/g, 'Delete Product');
+content = content.replace(/Visual Design/g, 'Design');
+
+fs.writeFileSync(filePath, content, 'utf-8');
+console.log('Replacements completed successfully.');
